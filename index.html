@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .skill {
+            background-color: #dfe4ea;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill:hover {
+            background-color: #74c0fc;
+        }
+
+        .project {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #007bff;
+        }
+
+        .project button {
+            background-color: #74c0fc;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .project button:hover {
+            background-color: #3382d1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#soft-skills">Soft Skills</a></li>
+                <li><a href="#teamwork">Teamwork</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm passionate about technology and collaboration. Here, you'll find my skills, teamwork experience, and projects.</p>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="soft-skills">
+        <h2>Soft Skills</h2>
+        <p>My top soft skills that I bring to any team:</p>
+        <ul>
+            <li class="skill" data-skill="Communication">Communication</li>
+            <li class="skill" data-skill="Problem-Solving">Problem-Solving</li>
+            <li class="skill" data-skill="Adaptability">Adaptability</li>
+            <li class="skill" data-skill="Leadership">Leadership</li>
+        </ul>
+    </section>
+
+    <!-- Teamwork Section -->
+    <section id="teamwork">
+        <h2>Teamwork Experience</h2>
+        <p>I've collaborated on several successful projects, demonstrating effective teamwork and communication. Here are a couple of highlights:</p>
+        <div class="project">
+            <h3>Project 1: Web Development</h3>
+            <p>Collaborated with a team of designers and developers to create a responsive website. My role involved integrating the backend with the frontend.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Mobile App</h3>
+            <p>Worked with a cross-functional team to build a mobile app. I managed task allocation and fostered clear communication between team members.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: E-Commerce Platform</h3>
+            <p>This is a fully functioning e-commerce platform built using JavaScript, HTML, and CSS. It supports user authentication, product management, and a secure checkout process.</p>
+            <button onclick="showDetails()">View Details</button>
+        </div>
+        <div class="project">
+            <h3>Project 2: Personal Portfolio</h3>
+            <p>This digital portfolio showcases my work, skills, and achievements. It's built using HTML, CSS, and JavaScript, with responsive design and interactivity.</p>
+            <button onclick="showDetails()">View Details</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Your Name | Digital Portfolio</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Function to show project details in an alert box
+        function
